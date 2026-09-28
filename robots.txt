@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://okazmanpower.qa/sitemap.xml
+Sitemap: https://okazmanpower.com/sitemap.xml
