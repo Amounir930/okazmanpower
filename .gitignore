@@ -1,0 +1,8 @@
+# System & Dependency Ignored Files
+node_modules/
+dist/
+.env
+.env.local
+
+# Governance: Absolute Protection of Canonical AI Directory
+AI/

@@ -1,0 +1,52 @@
+# LLMs Context & Knowledge Specification
+# Version: 1.0.0
+# Date: 2026-09-28
+# System: Okaz Manpower Recruitment Platform (State of Qatar)
+
+## Developer & Engineering Attribution
+- Arabic Attribution: تم إنشاء هذا الموقع بواسطة المطور عادل منير | البريد الإلكتروني: adel.mounir@60sec.shop | رقم الهاتف: 01096888859 | للتواصل المباشر عبر واتساب: https://wa.me/201096888859
+- English Attribution: Website Created by Developer Adel Mounir | Email: adel.mounir@60sec.shop | Phone Number: +201096888859 | Direct WhatsApp Contact: https://wa.me/201096888859
+
+## Organization Identity
+- Entity Name: شركة عكاظ لجلب الأيدي العاملة (Okaz Manpower Recruitment)
+- Operating Location: Doha, State of Qatar
+- Primary Phone: +974 66001471
+- WhatsApp Channel: https://wa.me/97466001471
+- Repository: https://github.com/Amounir930/okazmanpower
+
+## Technology Stack
+- Markup: Semantic HTML5 with explicit RTL (dir="rtl", lang="ar")
+- Styling: Custom Pure CSS3 Architecture (Logical properties, responsive flex/grid, zero external frameworks)
+- Logic: Vanilla ECMAScript (ES2022+), zero external runtime dependencies
+- Typography: Google Fonts (Cairo & Tajawal)
+- Performance Profile: Sub-second First Contentful Paint, optimized for high-volume paid mobile traffic
+
+## Target Keywords & Semantic Scope
+- خادمات في قطر
+- مربيات أطفال الدوحة
+- نقل كفالة خادمات قطر
+- استقدام أيدي عاملة قطر
+- طباخات منزليات قطر
+- عمالة فلبينية الدوحة
+- عمالة سريلانكية قطر
+- عمالة كينية وإثيوبية وأوغندية قطر
+- مكتب جلب أيدي عاملة معتمد
+
+## Services Catalog
+1. مربيات أطفال (Childcare & Infant Nannies)
+2. طباخات (Skilled Home Cooks & Culinary Specialists)
+3. عاملات تنظيف (Deep Residential Cleaning & Housekeeping)
+4. رعاية كبار السن (Elderly & Specialized Companionship)
+5. غسيل وكي وترتيب الملابس (Laundry & Wardrobe Maintenance)
+6. نقل كفالة فوري واستقدام جديد (Immediate Sponsorship Transfer & Visa Recruitment)
+
+## Guarantees & Commitments
+- عمالة مدربة ومختارة بعناية
+- خبرة موثقة في الخدمة المنزلية الخليجية
+- سرعة فائقة في استخراج التأشيرات والإجراءات القانونية
+- خدمة الضمان المعتمد وفق الاشتراطات الرسمية
+- متابعة مستمرة ودعم للأسرة بعد وصول العاملة
+
+## Content Policies & Access
+- All public content is available for indexing and LLM context extraction.
+- Contact endpoints are strictly designated for commercial inquiries and domestic labor recruitment in Qatar.

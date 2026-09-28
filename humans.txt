@@ -1,0 +1,19 @@
+/* TEAM */
+Developer: Adel Mounir (عادل منير)
+Contact Email: adel.mounir@60sec.shop
+Phone Number: +201096888859
+WhatsApp: https://wa.me/201096888859
+Role: Full-Stack Architect & Engineering Lead
+
+/* CLIENT */
+Organization: Okaz Manpower Recruitment (شركة عكاظ لجلب الأيدي العاملة)
+Location: Doha, State of Qatar
+Direct Telephone: +974 66001471
+WhatsApp Inquiries: https://wa.me/97466001471
+
+/* SITE */
+Standards: Semantic HTML5, Pure CSS3, ES2022+ Vanilla JS
+Typography: Cairo, Tajawal (Google Fonts)
+Software & Architecture: Antigravity IDE & Gemini Elite Engineering Framework
+Repository: https://github.com/Amounir930/okazmanpower
+Zero Emoji Policy: Enforced
