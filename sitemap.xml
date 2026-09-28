@@ -31,18 +31,6 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://okazmanpower.com/#steps</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://okazmanpower.com/#standards</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://okazmanpower.com/#testimonials</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -52,6 +40,12 @@
     <loc>https://okazmanpower.com/#portfolio</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://okazmanpower.com/#contact</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

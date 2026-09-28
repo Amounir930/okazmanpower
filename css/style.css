@@ -848,6 +848,12 @@ html[dir="ltr"] .mobile-nav-drawer.active {
   max-height: 450px;
 }
 
+@media (min-width: 992px) {
+  .hero-visual-card {
+    max-height: min(580px, 80vh);
+  }
+}
+
 .hero-main-banner-img {
   width: 100%;
   max-height: 450px;
@@ -855,6 +861,12 @@ html[dir="ltr"] .mobile-nav-drawer.active {
   object-fit: contain;
   border-radius: var(--radius-md);
   display: block;
+}
+
+@media (min-width: 992px) {
+  .hero-main-banner-img {
+    max-height: min(580px, 80vh);
+  }
 }
 
 /* ==========================================================================
