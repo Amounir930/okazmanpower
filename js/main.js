@@ -6,9 +6,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileDrawer();
-  initBookingGenerator();
   initPortfolioLightbox();
-  initFaqAccordion();
   initSmoothScroll();
 });
 
@@ -110,7 +108,8 @@ function initPortfolioLightbox() {
     card.addEventListener('click', () => {
       const img = card.querySelector('.portfolio-thumb');
       if (img) {
-        openLightbox(img.src, img.alt);
+        const fullSrc = img.getAttribute('data-full') || img.src;
+        openLightbox(fullSrc, img.alt);
       }
     });
   });

@@ -15,11 +15,12 @@
 - Repository: https://github.com/Amounir930/okazmanpower
 
 ## Technology Stack
-- Markup: Semantic HTML5 with explicit RTL (dir="rtl", lang="ar")
+- Markup: Semantic HTML5 with complete bilingual support: Arabic (index.html, dir="rtl", lang="ar") and English (en.html, dir="ltr", lang="en")
+- Image Pipeline: High-performance Next-Gen WebP optimization with responsive picture tags and preloading
 - Styling: Custom Pure CSS3 Architecture (Logical properties, responsive flex/grid, zero external frameworks)
 - Logic: Vanilla ECMAScript (ES2022+), zero external runtime dependencies
 - Typography: Google Fonts (Cairo & Tajawal)
-- Performance Profile: Sub-second First Contentful Paint, optimized for high-volume paid mobile traffic
+- Performance Profile: Core Web Vitals optimized, sub-second LCP on mobile, lightweight WebP assets
 
 ## Target Keywords & Semantic Scope
 - خادمات في قطر
