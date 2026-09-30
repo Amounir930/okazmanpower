@@ -770,6 +770,23 @@ html[dir="ltr"] .mobile-nav-drawer.active {
   border-radius: var(--radius-md);
   padding: 12px 14px;
   margin-bottom: 14px;
+  contain: layout;
+}
+
+@media (max-width: 640px) {
+  .hero-badge-wrap .section-badge {
+    font-size: 0.74rem;
+    padding: 4px 10px;
+    white-space: nowrap;
+  }
+
+  .hero-nationalities-pills {
+    min-height: 68px;
+  }
+
+  .hero-services-block {
+    min-height: 140px;
+  }
 }
 
 .hero-services-grid {

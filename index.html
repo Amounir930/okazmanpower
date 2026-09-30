@@ -12,10 +12,9 @@
   <link rel="describedby" href="https://okazmanpower.com/llms.txt">
   <link rel="alternate" type="text/markdown" href="https://okazmanpower.com/llms.txt">
 
-  <!-- Security Headers (HTML Fallback) -->
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  <!-- Security & Referrer Policy -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https:;">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <!-- Preload Critical LCP Hero Image in Modern WebP with High Priority -->
   <link rel="preload" as="image" href="photo/hero-banner-mobile.webp" media="(max-width: 640px)" type="image/webp" fetchpriority="high">
@@ -40,11 +39,11 @@
   <!-- Preload Critical Cairo Font for Instant Painting without CLS -->
   <link rel="preload" href="https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- Non-render-blocking Google Fonts: Cairo only (eliminates 750ms blocking) -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <!-- Non-render-blocking Google Fonts: Cairo only with display=optional (0 CLS) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=optional">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=optional" media="print" onload="this.media='all'">
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=optional">
   </noscript>
 
   <!-- Main Stylesheet (Minified) -->
@@ -131,7 +130,7 @@
   <!-- Mobile Drawer -->
   <div id="mobileNavDrawer" class="mobile-nav-drawer">
     <div class="drawer-header">
-      <img src="photo/logo.webp" alt="شعار شركة عكاظ" style="height: 44px; width: auto; object-fit: contain;">
+      <img src="photo/logo.webp" alt="شعار شركة عكاظ" width="66" height="44" style="height: 44px; width: auto; object-fit: contain;">
       <button id="drawerCloseBtn" class="drawer-close-btn" aria-label="إغلاق القائمة">
         <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
       </button>
@@ -268,7 +267,7 @@
             <picture>
               <source media="(max-width: 640px)" srcset="photo/hero-banner-mobile.webp" type="image/webp">
               <source srcset="photo/hero-banner.webp" type="image/webp">
-              <img src="photo/hero-banner-mobile.webp" alt="إعلان شركة عكاظ لجلب الأيدي العاملة في قطر" class="hero-main-banner-img" width="480" height="480" fetchpriority="high" decoding="async">
+              <img src="photo/hero-banner-mobile.webp" alt="إعلان شركة عكاظ لجلب الأيدي العاملة في قطر" class="hero-main-banner-img" width="380" height="380" fetchpriority="high" decoding="async">
             </picture>
           </div>
         </div>
@@ -770,7 +769,7 @@
       <button id="lightboxCloseBtn" class="lightbox-close-btn" aria-label="إغلاق المعاينة">
         <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
       </button>
-      <img id="lightboxImg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="معاينة إعلان شركة عكاظ" class="lightbox-img" width="600" height="600">
+      <img id="lightboxImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="معاينة إعلان شركة عكاظ" class="lightbox-img" width="600" height="600">
     </div>
   </div>
 
