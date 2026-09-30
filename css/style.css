@@ -12,6 +12,7 @@
   --accent-gold: #c59b27;
   --accent-gold-hover: #ad861e;
   --accent-gold-light: #fdf8eb;
+  --accent-gold-text: #875c00;
   --accent-gold-border: rgba(197, 155, 39, 0.35);
   
   --bg-main: #f8fafc;
@@ -21,10 +22,10 @@
   --bg-dark-card: #0c203b;
   
   --text-main: #0f172a;
-  --text-muted: #475569;
-  --text-subtle: #64748b;
+  --text-muted: #334155;
+  --text-subtle: #475569;
   --text-light: #f8fafc;
-  --text-gold: #c59b27;
+  --text-gold: #875c00;
   
   --border-subtle: #e2e8f0;
   --border-focus: #0b4f9c;
@@ -60,11 +61,36 @@ html, body {
 }
 
 html {
-  font-family: 'Cairo', 'Tajawal', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Cairo', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Accessibility Skip Link & Visually Hidden */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.skip-link:focus {
+  position: fixed !important;
+  top: 10px !important;
+  right: 10px !important;
+  z-index: 10000 !important;
+  background: var(--primary-navy) !important;
+  color: #ffffff !important;
+  padding: 10px 16px !important;
+  border-radius: var(--radius-sm) !important;
+  box-shadow: var(--shadow-lg) !important;
 }
 
 /* LTR English Overrides */
@@ -152,7 +178,7 @@ button, input, select, textarea {
 
 .section-badge.gold-badge {
   background: var(--accent-gold-light);
-  color: var(--accent-gold);
+  color: var(--accent-gold-text);
   border-color: var(--accent-gold-border);
 }
 
@@ -302,6 +328,7 @@ button, input, select, textarea {
 .brand-logo-img {
   height: 48px;
   width: auto;
+  aspect-ratio: 3 / 2;
   max-width: 170px;
   object-fit: contain;
   display: block;
@@ -637,7 +664,7 @@ html[dir="ltr"] .mobile-nav-drawer.active {
   display: block;
   font-size: 1.05rem;
   font-weight: 800;
-  color: var(--accent-gold);
+  color: var(--accent-gold-text);
   margin-bottom: 12px;
   line-height: 1.4;
 }
@@ -845,7 +872,10 @@ html[dir="ltr"] .mobile-nav-drawer.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 450px;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
 }
 
 @media (min-width: 992px) {
@@ -856,9 +886,9 @@ html[dir="ltr"] .mobile-nav-drawer.active {
 
 .hero-main-banner-img {
   width: 100%;
-  max-height: 450px;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: var(--radius-md);
   display: block;
 }

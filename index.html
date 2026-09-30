@@ -9,9 +9,16 @@
   <meta name="author" content="Adel Mounir">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://okazmanpower.com/">
+  <link rel="describedby" href="https://okazmanpower.com/llms.txt">
+  <link rel="alternate" type="text/markdown" href="https://okazmanpower.com/llms.txt">
 
-  <!-- Preload Critical LCP Hero Image in Modern WebP -->
-  <link rel="preload" as="image" href="photo/hero-banner-mobile.webp" media="(max-width: 640px)" type="image/webp">
+  <!-- Security Headers (HTML Fallback) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+
+  <!-- Preload Critical LCP Hero Image in Modern WebP with High Priority -->
+  <link rel="preload" as="image" href="photo/hero-banner-mobile.webp" media="(max-width: 640px)" type="image/webp" fetchpriority="high">
   <link rel="preload" as="image" href="photo/hero-banner.webp" media="(min-width: 641px)" type="image/webp">
 
   <!-- Open Graph / Meta -->
@@ -26,13 +33,22 @@
   <meta name="theme-color" content="#071933">
   <link rel="icon" type="image/webp" href="photo/logo.webp">
 
-  <!-- Google Fonts: Cairo & Tajawal -->
+  <!-- Preconnect to Font Origins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Preload Critical Cairo Font for Instant Painting without CLS -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Non-render-blocking Google Fonts: Cairo only (eliminates 750ms blocking) -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap">
+  </noscript>
+
+  <!-- Main Stylesheet (Minified) -->
+  <link rel="stylesheet" href="css/style.min.css">
 
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
@@ -71,11 +87,14 @@
 </head>
 <body>
 
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link visually-hidden">الانتقال إلى المحتوى الرئيسي</a>
+
   <!-- Main Site Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="#" class="site-brand" title="شركة عكاظ لجلب الأيدي العاملة">
-        <img src="photo/logo.webp" alt="شعار شركة عكاظ لجلب الأيدي العاملة" class="brand-logo-img" width="160" height="48">
+        <img src="photo/logo.webp" alt="شعار شركة عكاظ لجلب الأيدي العاملة" class="brand-logo-img" width="120" height="80">
       </a>
 
       <!-- Desktop Navigation Menu -->
@@ -139,6 +158,9 @@
     </div>
   </div>
   <div id="drawerBackdrop" class="drawer-backdrop"></div>
+
+  <!-- Main Semantic Content Wrapper -->
+  <main id="main-content">
 
   <!-- Hero Section -->
   <section id="home" class="hero-section">
@@ -246,7 +268,7 @@
             <picture>
               <source media="(max-width: 640px)" srcset="photo/hero-banner-mobile.webp" type="image/webp">
               <source srcset="photo/hero-banner.webp" type="image/webp">
-              <img src="photo/hero-banner.webp" alt="إعلان شركة عكاظ لجلب الأيدي العاملة في قطر" class="hero-main-banner-img" width="480" height="480" fetchpriority="high" decoding="async">
+              <img src="photo/hero-banner-mobile.webp" alt="إعلان شركة عكاظ لجلب الأيدي العاملة في قطر" class="hero-main-banner-img" width="480" height="480" fetchpriority="high" decoding="async">
             </picture>
           </div>
         </div>
@@ -254,8 +276,9 @@
     </div>
   </section>
 
-  <section class="stats-counter-section">
+  <section class="stats-counter-section" aria-label="إحصائيات وأرقام شركة عكاظ">
     <div class="container">
+      <h2 class="visually-hidden">إحصائيات وأرقام شركة عكاظ</h2>
       <div class="stats-grid">
         <div class="stat-card">
           <div class="stat-number">+12</div>
@@ -450,11 +473,11 @@
       <div class="portfolio-grid">
         <div class="portfolio-card">
           <div class="portfolio-img-wrap">
-            <img src="photo/poster-general-thumb.webp" data-full="photo/poster-general.webp" alt="طلبات خدم من الجنسيات المتعددة - عكاظ" class="portfolio-thumb" width="400" height="400" loading="lazy" decoding="async">
+            <img src="photo/poster-general-thumb.webp" data-full="photo/poster-general.webp" alt="طلبات خدم من الجنسيات المتعددة - عكاظ" class="portfolio-thumb" width="360" height="360" loading="lazy" decoding="async">
             <div class="portfolio-overlay">
               <div class="portfolio-overlay-text">
                 <span class="portfolio-tag">الحملة الشاملة</span>
-                <h4 class="portfolio-title">نوفر لكم طلبات خدم من 5 جنسيات</h4>
+                <h3 class="portfolio-title">نوفر لكم طلبات خدم من 5 جنسيات</h3>
               </div>
             </div>
           </div>
@@ -462,11 +485,11 @@
 
         <div class="portfolio-card">
           <div class="portfolio-img-wrap">
-            <img src="photo/poster-nanny-thumb.webp" data-full="photo/poster-nanny.webp" alt="مربيات أطفال لرعاية طفلكم بكل أمان - عكاظ" class="portfolio-thumb" width="400" height="400" loading="lazy" decoding="async">
+            <img src="photo/poster-nanny-thumb.webp" data-full="photo/poster-nanny.webp" alt="مربيات أطفال لرعاية طفلكم بكل أمان - عكاظ" class="portfolio-thumb" width="360" height="360" loading="lazy" decoding="async">
             <div class="portfolio-overlay">
               <div class="portfolio-overlay-text">
                 <span class="portfolio-tag">رعاية الأطفال</span>
-                <h4 class="portfolio-title">مربيات أطفال بكل أمان واهتمام</h4>
+                <h3 class="portfolio-title">مربيات أطفال بكل أمان واهتمام</h3>
               </div>
             </div>
           </div>
@@ -474,11 +497,11 @@
 
         <div class="portfolio-card">
           <div class="portfolio-img-wrap">
-            <img src="photo/poster-elderly-thumb.webp" data-full="photo/poster-elderly.webp" alt="رعاية كبار السن ومرافقة ودعم يومي - عكاظ" class="portfolio-thumb" width="400" height="400" loading="lazy" decoding="async">
+            <img src="photo/poster-elderly-thumb.webp" data-full="photo/poster-elderly.webp" alt="رعاية كبار السن ومرافقة ودعم يومي - عكاظ" class="portfolio-thumb" width="360" height="360" loading="lazy" decoding="async">
             <div class="portfolio-overlay">
               <div class="portfolio-overlay-text">
                 <span class="portfolio-tag">رعاية كبار السن</span>
-                <h4 class="portfolio-title">معكم في كل يوم .. رعاية ومساعدة</h4>
+                <h3 class="portfolio-title">معكم في كل يوم .. رعاية ومساعدة</h3>
               </div>
             </div>
           </div>
@@ -486,11 +509,11 @@
 
         <div class="portfolio-card">
           <div class="portfolio-img-wrap">
-            <img src="photo/poster-cleaning-thumb.webp" data-full="photo/poster-cleaning.webp" alt="بيت أنظف لحياة أسعد وغسيل وكي ملابس - عكاظ" class="portfolio-thumb" width="400" height="400" loading="lazy" decoding="async">
+            <img src="photo/poster-cleaning-thumb.webp" data-full="photo/poster-cleaning.webp" alt="بيت أنظف لحياة أسعد وغسيل وكي ملابس - عكاظ" class="portfolio-thumb" width="360" height="360" loading="lazy" decoding="async">
             <div class="portfolio-overlay">
               <div class="portfolio-overlay-text">
                 <span class="portfolio-tag">نظافة وكي الملابس</span>
-                <h4 class="portfolio-title">غسيل وكي وترتيب الملابس بمظهر أنيق</h4>
+                <h3 class="portfolio-title">غسيل وكي وترتيب الملابس بمظهر أنيق</h3>
               </div>
             </div>
           </div>
@@ -498,11 +521,11 @@
 
         <div class="portfolio-card">
           <div class="portfolio-img-wrap">
-            <img src="photo/poster-comfort-thumb.webp" data-full="photo/poster-comfort.webp" alt="راحة منزلك بين أيد أمينة - عكاظ" class="portfolio-thumb" width="400" height="400" loading="lazy" decoding="async">
+            <img src="photo/poster-comfort-thumb.webp" data-full="photo/poster-comfort.webp" alt="راحة منزلك بين أيد أمينة - عكاظ" class="portfolio-thumb" width="360" height="360" loading="lazy" decoding="async">
             <div class="portfolio-overlay">
               <div class="portfolio-overlay-text">
                 <span class="portfolio-tag">التدبير المنزلي</span>
-                <h4 class="portfolio-title">راحة منزلك بين أيد أمينة</h4>
+                <h3 class="portfolio-title">راحة منزلك بين أيد أمينة</h3>
               </div>
             </div>
           </div>
@@ -510,11 +533,11 @@
 
         <div class="portfolio-card">
           <div class="portfolio-img-wrap">
-            <img src="photo/poster-cook-thumb.webp" data-full="photo/poster-cook.webp" alt="مطبخ أسعد ومنزل أنظف وطباخات - عكاظ" class="portfolio-thumb" width="400" height="400" loading="lazy" decoding="async">
+            <img src="photo/poster-cook-thumb.webp" data-full="photo/poster-cook.webp" alt="مطبخ أسعد ومنزل أنظف وطباخات - عكاظ" class="portfolio-thumb" width="360" height="360" loading="lazy" decoding="async">
             <div class="portfolio-overlay">
               <div class="portfolio-overlay-text">
                 <span class="portfolio-tag">طباخات منزليات</span>
-                <h4 class="portfolio-title">مساعدتك في كل تفاصيل منزلك ومطبخك</h4>
+                <h3 class="portfolio-title">مساعدتك في كل تفاصيل منزلك ومطبخك</h3>
               </div>
             </div>
           </div>
@@ -747,7 +770,7 @@
       <button id="lightboxCloseBtn" class="lightbox-close-btn" aria-label="إغلاق المعاينة">
         <svg class="svg-icon" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
       </button>
-      <img id="lightboxImg" src="" alt="معاينة إعلان شركة عكاظ" class="lightbox-img">
+      <img id="lightboxImg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="معاينة إعلان شركة عكاظ" class="lightbox-img" width="600" height="600">
     </div>
   </div>
 
@@ -777,6 +800,8 @@
       </div>
     </div>
   </section>
+
+  </main>
 
   <footer class="site-footer">
     <div class="container">

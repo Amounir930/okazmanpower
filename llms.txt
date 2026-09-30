@@ -1,28 +1,32 @@
-# LLMs Context & Knowledge Specification
-# Version: 1.0.0
-# Date: 2026-09-28
-# System: Okaz Manpower Recruitment Platform (State of Qatar)
+# شركة عكاظ لجلب الأيدي العاملة | Okaz Manpower Recruitment
 
-## Developer & Engineering Attribution
-- Arabic Attribution: تم إنشاء هذا الموقع بواسطة المطور عادل منير | البريد الإلكتروني: adel.mounir@60sec.shop | رقم الهاتف: 01096888859 | للتواصل المباشر عبر واتساب: https://wa.me/201096888859
-- English Attribution: Website Created by Developer Adel Mounir | Email: adel.mounir@60sec.shop | Phone Number: +201096888859 | Direct WhatsApp Contact: https://wa.me/201096888859
+> شركة عكاظ لجلب الأيدي العاملة في دولة قطر (Doha, Qatar). منصة رقمية رسمية معتمدة لاستقدام العمالة المنزلية ونقل الكفالة الفوري بخيارات متعددة وضمان قانوني موثق يشمل مربيات الأطفال، الطباخات، وعاملات التنظيف من 5 جنسيات رئيسية: الفلبين، بنجلاديش، كينيا، إثيوبيا، وسريلانكا.
 
-## Organization Identity
-- Entity Name: شركة عكاظ لجلب الأيدي العاملة (Okaz Manpower Recruitment)
-- Operating Location: Doha, State of Qatar
-- Primary Phone: +974 66001471
-- WhatsApp Channel: https://wa.me/97466001471
-- Repository: https://github.com/Amounir930/okazmanpower
+## Version & Metadata
+- Specification Version: 2.0.0
+- Updated: 2026-09-30
+- Canonical Origin: https://okazmanpower.com/
+- Jurisdiction: State of Qatar (دولة قطر)
+- Primary Contact: +974 66001471
+- Direct WhatsApp: https://wa.me/97466001471
+
+## Core Pages & Services
+- [الصفحة الرئيسية (Arabic Portal)](https://okazmanpower.com/): البوابة الرسمية لاستقدام العمالة المنزلية ونقل الكفالة الفوري داخل قطر.
+- [English Portal](https://okazmanpower.com/en.html): Certified domestic workers recruitment in Doha, Qatar with immediate transfer.
+- [نقل الكفالة الفوري (Sponsorship Transfer)](https://okazmanpower.com/#transfer): استلام فوري للعمالة المنزلية المتواجدة داخل قطر دون الحاجة لانتظار رحلات الاستقدام.
+- [خدماتنا وتخصصاتنا (Services Catalog)](https://okazmanpower.com/#services): مربيات أطفال، طباخات، عاملات نظافة، رعاية كبار السن، غسيل وكي وترتيب الملابس.
+- [الجنسيات المعتمدة (Approved Nationalities)](https://okazmanpower.com/#nationalities): كوادر مؤهلة من الفلبين، بنجلاديش، كينيا، إثيوبيا، وسريلانكا.
+- [معرض الحملات والإعلانات (Campaign Showcase)](https://okazmanpower.com/#portfolio): عروض وبوسترات الشركة المعتمدة للطلبات ونقل الكفالة.
+- [شهادات وتقييمات العملاء (Client Testimonials)](https://okazmanpower.com/#testimonials): آراء وتجارب موثقة لأسر وعائلات داخل دولة قطر.
+- [طلب فوري عبر واتساب (WhatsApp Fast Channel)](https://wa.me/97466001471): قناة الاستفسار والطلب المباشر للسير الذاتية المتاحة.
 
 ## Technology Stack
-- Markup: Semantic HTML5 with complete bilingual support: Arabic (index.html, dir="rtl", lang="ar") and English (en.html, dir="ltr", lang="en")
-- Image Pipeline: High-performance Next-Gen WebP optimization with responsive picture tags and preloading
-- Styling: Custom Pure CSS3 Architecture (Logical properties, responsive flex/grid, zero external frameworks)
-- Logic: Vanilla ECMAScript (ES2022+), zero external runtime dependencies
-- Typography: Google Fonts (Cairo & Tajawal)
-- Performance Profile: Core Web Vitals optimized, sub-second LCP on mobile, lightweight WebP assets
+- Architecture: Pure Semantic HTML5, Zero CSS Frameworks (Pure CSS3), Vanilla ECMAScript (ES2022+).
+- Performance & Core Web Vitals: Preloaded Next-Gen WebP graphics, non-render-blocking font delivery, sub-second LCP.
+- Accessibility & SEO: Strict heading hierarchy, WCAG AA compliant contrast, 6-Pillar AI Identity integration.
+- Hosting: Static CDN Architecture with Cloudflare edge integration.
 
-## Target Keywords & Semantic Scope
+## Target Keywords
 - خادمات في قطر
 - مربيات أطفال الدوحة
 - نقل كفالة خادمات قطر
@@ -33,21 +37,10 @@
 - عمالة كينية وإثيوبية وسريلانكية قطر
 - مكتب جلب أيدي عاملة معتمد
 
-## Services Catalog
-1. مربيات أطفال (Childcare & Infant Nannies)
-2. طباخات (Skilled Home Cooks & Culinary Specialists)
-3. عاملات تنظيف (Deep Residential Cleaning & Housekeeping)
-4. رعاية كبار السن (Elderly & Specialized Companionship)
-5. غسيل وكي وترتيب الملابس (Laundry & Wardrobe Maintenance)
-6. نقل كفالة فوري واستقدام جديد (Immediate Sponsorship Transfer & Visa Recruitment)
+## Content Policies & LLM Ingestion
+- All public text and catalog metadata are open for LLM indexing, summarization, and agentic search.
+- Commercial endpoints and phone numbers are strictly designated for client hiring and domestic employment services in Qatar.
 
-## Guarantees & Commitments
-- عمالة مدربة ومختارة بعناية
-- خبرة موثقة في الخدمة المنزلية الخليجية
-- سرعة فائقة في استخراج التأشيرات والإجراءات القانونية
-- خدمة الضمان المعتمد وفق الاشتراطات الرسمية
-- متابعة مستمرة ودعم للأسرة بعد وصول العاملة
-
-## Content Policies & Access
-- All public content is available for indexing and LLM context extraction.
-- Contact endpoints are strictly designated for commercial inquiries and domestic labor recruitment in Qatar.
+## Developer & Engineering Attribution
+- Arabic Attribution: تم إنشاء هذا الموقع بواسطة المطور عادل منير | البريد الإلكتروني: adel.mounir@60sec.shop | رقم الهاتف: 01096888859 | للتواصل المباشر عبر واتساب: https://wa.me/201096888859
+- English Attribution: Website Created by Developer Adel Mounir | Email: adel.mounir@60sec.shop | Phone Number: +201096888859 | Direct WhatsApp Contact: https://wa.me/201096888859
