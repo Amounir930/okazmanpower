@@ -114,6 +114,14 @@ function initPortfolioLightbox() {
     });
   });
 
+  const transferImg = document.querySelector('.transfer-preview-img');
+  if (transferImg) {
+    transferImg.addEventListener('click', () => {
+      const fullSrc = transferImg.getAttribute('data-full') || transferImg.src;
+      openLightbox(fullSrc, transferImg.alt);
+    });
+  }
+
   if (closeBtn) {
     closeBtn.addEventListener('click', closeLightbox);
   }

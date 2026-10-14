@@ -1435,6 +1435,12 @@ html[dir="ltr"] .mobile-nav-drawer.active {
   border-radius: var(--radius-md);
   object-fit: contain;
   display: block;
+  cursor: pointer;
+  transition: transform var(--transition-medium);
+}
+
+.transfer-preview-img:hover {
+  transform: scale(1.02);
 }
 
 
